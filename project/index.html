@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Springy Bézier Rope</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #eee;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+    }
+    #wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    canvas {
+      border: 1px solid #444;
+      background: #000;
+    }
+    #info {
+      padding: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <canvas id="bezierCanvas" width="800" height="500"></canvas>
+  </div>
+  <div id="info">
+    Move your mouse over the canvas – the Bézier rope will follow with springy motion and tangents.
+  </div>
+
+ 
+  <script src="main.js"></script>
+</body>
+</html>
